@@ -16,11 +16,10 @@ def f(i, j):
         count += 1
 
 N = int(input())
-for _ in range(N):
-    heights = [list(map(int, input().split())) for _ in range(N)]
-    count = 0
-    for i in range(N):
-        for j in range(N):
-            f(i,j)
+heights = [list(map(int, input().split())) for _ in range(N)]
+count = 0
+for i in range(N):
+    for j in range(N):
+        f(i,j)
 
-    print(count)
+print(count)
